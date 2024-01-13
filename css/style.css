@@ -1,20 +1,102 @@
 @charset "utf-8";
 
 /* 00. font - 구글폰트에서 Montserrat 300/400/600 가져옴 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap");
 
 /* 00. Reset */
-* {margin: 0;padding: 0;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
-a {color: inherit; text-decoration: inherit;}
-li {list-style: none;}
-address, em, i {font-style: normal;}
-button {background: none; border: none;}
-img {vertical-align: middle;}
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+li {
+    list-style: none;
+}
+address,
+em,
+i {
+    font-style: normal;
+}
+button {
+    background: none;
+    border: none;
+}
+img {
+    vertical-align: middle;
+}
 
 body {
-    font-weight: 'RaleWay', sans-serif; font-size: 16px; letter-spacing: -0.01em;
+    font-weight: "RaleWay", sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
 }
 
 .wrap {
@@ -30,7 +112,9 @@ header {
     z-index: 9999;
     width: 100%;
 }
-header .inner {padding: 30px 50px 0;}
+header .inner {
+    padding: 30px 50px 0;
+}
 
 header .inner .logo {
     display: flex;
@@ -38,10 +122,16 @@ header .inner .logo {
     width: 150px;
 }
 
-header .inner .logo span {padding: 0 1px;}
-header .inner .logo span img {width: 100%;}
+header .inner .logo span {
+    padding: 0 1px;
+}
+header .inner .logo span img {
+    width: 100%;
+}
 
-header .gnb {text-align: center;}
+header .gnb {
+    text-align: center;
+}
 header .gnb .menuOpen {
     font-size: 10px;
     position: absolute;
@@ -70,11 +160,11 @@ header .gnb .menuOpen:hover:before {
 }
 
 header .gnb .menuBox {
-    width: 99%; 
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    top: -1000%; 
+    width: 99%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1000%;
     background-color: rgba(55, 55, 55, 0.4);
     backdrop-filter: blur(30px);
     border-radius: 5px;
@@ -83,10 +173,12 @@ header .gnb .menuBox {
     transition: all 1.5s;
 }
 
-header .gnb .menuBox li {overflow: hidden;}
+header .gnb .menuBox li {
+    overflow: hidden;
+}
 header .gnb .menuBox li a {
-    display: block; 
-    font-size: 40px; 
+    display: block;
+    font-size: 40px;
     transform: translateY(-100px);
     transition: all 0.6s;
 }
@@ -100,11 +192,19 @@ header .gnb .menuBox.on li a {
     transform: translateY(0px);
 }
 
-header .gnb .menuBox.on li:nth-child(2) a {transition-delay: 0.05s;}
-header .gnb .menuBox.on li:nth-child(3) a {transition-delay: 0.1s;}
-header .gnb .menuBox.on li:nth-child(4) a {transition-delay: 0.15s;}
+header .gnb .menuBox.on li:nth-child(2) a {
+    transition-delay: 0.05s;
+}
+header .gnb .menuBox.on li:nth-child(3) a {
+    transition-delay: 0.1s;
+}
+header .gnb .menuBox.on li:nth-child(4) a {
+    transition-delay: 0.15s;
+}
 
-.visual{}
+.visual {
+    margin-bottom: 0;
+}
 .visual .inner {
     display: grid;
     height: 100vh;
@@ -141,7 +241,160 @@ header .gnb .menuBox.on li:nth-child(4) a {transition-delay: 0.15s;}
     margin-bottom: 50px;
 }
 
-.visual .inner .subText span {color: #585858; }
+.visual .inner .subText span {
+    color: #585858;
+}
 
-.visual .inner .logoWrap span {width: 16%;}
-.visual .inner .logoWrap span img {width: 100%;}
+.visual .inner .logoWrap span {
+    width: 16%;
+}
+.visual .inner .logoWrap span img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 150px;
+}
+.inner {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.btn {
+    font-size: 11px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.con1 .box {
+    padding: 60px;
+    background-color: rgba(55, 55, 55, 0.4);
+    backdrop-filter: blur(100px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
+}
+
+.con1 .box .mainText {
+    font-size: 30px;
+    grid-row-start: 2;
+}
+
+.con1 .box .subText {
+    max-width: 500px;
+    font-size: 20px;
+    grid-column-start: 2;
+}
+
+.con1 .box .subText p {
+    margin-top: 14px;
+}
+
+.con1 .textAni {
+    margin-top: 14px;
+    position: relative;
+}
+.con1 .textAni::before {
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color: #e36840;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: opa linear 1.5s 0s infinite;
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.con1 .textAni ul {
+    display: grid;
+    max-width: 800px;
+}
+
+.con1 .textAni ul li {
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.con2 .inner {
+    position: relative;
+    padding: 40px 50px;
+}
+
+.con2 .inner::before {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: #3b3b3b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.con2 .mainTextBox {
+    position: relative;
+}
+
+.con2 .mainTextBox span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.con2 .mainTextBox .in {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.con2 .mainTextBox .in .box {
+    max-width: 550px;
+    margin-right: 20px;
+}
+.con2 .mainTextBox .in .box video {
+    width: 100%;
+}
+.con2 .mainTextBox .title {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -5px;
+    text-align: right;
+    overflow: hidden;
+}
+.con2 .mainTextBox .title.a {align-self: flex-end;}
+.con2 .mainTextBox .title.b {margin-right: 400px;}
+
+.con2 .subTextBox {display: flex; justify-content: space-between; align-items: flex-end;}
+.con2 .subTextBox .subText {max-width: 600px; font-size: 22px;}
+.con2 .subTextBox .subText p:nth-child(1) {margin-bottom: 20px;}
+
+.con2 .subTextBox .iconbox {display: flex;}
+.con2 .subTextBox .iconbox li {width: 28px; margin: 0 10px; background-color: green; place-items: center;}
+.con2 .subTextBox .iconbox li:last-child {width: 40px;}
