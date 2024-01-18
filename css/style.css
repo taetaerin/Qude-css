@@ -652,6 +652,7 @@ footer .inner {
     display: flex;
     flex-direction: column;
     z-index: 2;
+    position: relative;
 }
 
 footer .box {
